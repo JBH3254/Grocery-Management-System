@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנות בתהליך</title>
+    <link rel="stylesheet" href="orders_in_process.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>הזמנות קיימות</h1>
+        </header>
+        <div class="container">
+            <h1>ההזמנות שלי</h1>
+            <div id="message" class=""></div>
+            <ul id="ordersList">
+                <li>טוען הזמנות...</li>
+            </ul>
+            <div id="orderDetailsModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal" class="close-btn">&times;</span>
+                    <h3>פרטי הזמנה</h3>
+                    <pre id="orderDetailsContent"></pre>
+                </div>
+            </div>
+                <button id="logoutButton">התנתק</button>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 מערכת ניהול מכולת</p>
+        </footer>
+    </div>
+    <script src="completed_orders.js"></script>
+</body>
+</html>

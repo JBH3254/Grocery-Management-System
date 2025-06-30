@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית של הספק</title>
+    <link rel="stylesheet" href="supplier_orders.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ברוך הבא, <span id="usernameDisplay"></span>!</h1>
+        <p>כאן תוכל לצפות בהזמנות שלך.</p>
+        <div id="ordersView">
+            <h2>ההזמנות שלי</h2>
+            <ul id="ordersList">
+                <li>טוען הזמנות...</li>
+            </ul>
+        </div>
+        <div id="orderDetailsModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close-btn">&times;</span>
+                <h3>פרטי הזמנה</h3>
+                <pre id="orderDetailsContent"></pre>
+            </div>
+        </div>
+        <button id="logoutButton">התנתק</button>
+    </div>
+
+    <script src="supplier_orders.js"></script>
+</body>
+</html>

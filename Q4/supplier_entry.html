@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספק - רישום וכניסה</title>
+    <link rel="stylesheet" href="supplier_entry.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ספק</h1>
+
+        <div id="registrationForm">
+            <h2>רישום ספק חדש</h2>
+            <div class="form-group">
+                <label for="companyName">שם חברה:</label>
+                <input type="text" id="companyName" required>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumber">מספר טלפון:</label>
+                <input type="tel" id="phoneNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="representativeName">שם נציג:</label>
+                <input type="text" id="representativeName" required>
+            </div>
+            <div class="form-group">
+                <label for="products">מוצרים (שם, מחיר, כמות מינימלית - כל מוצר בשורה נפרדת, מופרדים בפסיק):</label>
+                <textarea id="products" rows="5" required></textarea>
+            </div>
+            <button id="registerButton">רשום</button>
+            <div id="message"></div>
+        </div>
+
+        <div id="loginForm">
+            <h2>כניסת ספק</h2>
+            <div class="form-group">
+                <label for="loginUsername">שם משתמש:</label>
+                <input type="text" id="loginUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">סיסמה:</label>
+                <input type="password" id="loginPassword" required>
+            </div>
+            <button id="loginButton">התחבר</button>
+            <div id="loginMessage"></div>
+        </div>
+
+        <button id="toggleLogin">כניסה לספק קיים</button>
+        <button id="toggleRegister" style="display:none;">רישום ספק חדש</button>
+    </div>
+
+    <script src="supplier_entry.js"></script>
+</body>
+</html>

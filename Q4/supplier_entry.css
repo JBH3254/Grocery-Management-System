@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    text-align: right;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #337ab7;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: right;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#message, #loginMessage {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#message.success, #loginMessage.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+#message.error, #loginMessage.error {
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+#toggleLogin, #toggleRegister {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: auto;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#toggleLogin:hover, #toggleRegister:hover {
+    background-color: #ec971f;
+}

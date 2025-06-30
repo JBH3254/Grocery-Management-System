@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בעל המכולת - הזמנת סחורה</title>
+    <link rel="stylesheet" href="grocery_orders.css">
+</head>
+<body>
+    <div class="container">
+        <h1>הזמנת סחורה</h1>
+
+        <button id="showSupplierList">הזמנת סחורה מספק</button>
+
+        <div id="supplierSelection" style="display: none;">
+            <h2>בחר ספק</h2>
+            <select id="supplierDropdown">
+                <option value="">טוען ספקים...</option>
+            </select>
+            <button id="showProductList">הצג מוצרים</button>
+        </div>
+
+        <div id="productList" style="display: none;">
+            <h2>מוצרים של הספק: <span id="selectedSupplierName"></span></h2>
+            <form id="orderForm">
+                <div id="productsToOrder">
+                    </div>
+                <button type="button" id="submitOrder">בצע הזמנה</button>
+            </form>
+        </div>
+
+        <div id="message" class=""></div>
+    </div>
+
+    <script src="grocery_orders.js"></script>
+</body>
+</html>

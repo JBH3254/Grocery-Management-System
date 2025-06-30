@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>סופרמרקל</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ברוכים הבאים ל<strong>סופמרקל</strong></h1>
+
+        <div id="supplierSection">
+            <button onclick="goToSupplier()">כניסת ספק</button>
+        </div>
+
+        <hr>
+
+        <div id="adminSection" class="form-group">
+            <label for="adminCode">קוד מנהל:</label>
+            <input type="password" id="adminCode" placeholder="הזן קוד מנהל">
+            <button onclick="verifyAdmin()">כניסת מנהל</button>
+            <div id="adminMessage"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
